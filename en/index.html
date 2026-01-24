@@ -2,327 +2,342 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Help Man | Google Maps Boost & Booking Landing Page in Vancouver</title>
-  <meta name="description" content="For Vancouver local businesses: Google Business Profile optimization delivered in 48 hours, plus a mobile-first one-page booking landing page. English/Japanese support." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Help Man | 48-Hour Map Boost | $299 CAD (Fixed)</title>
+  <meta name="description" content="Standard price fixed at $299 CAD. First 5 clients get Google Account + Google Business Profile setup included at the same price. Delivered in 48 hours (starts after access + materials). Booking-focused contact flow. Bilingual support EN/JP." />
+  <meta property="og:title" content="Help Man | 48-Hour Map Boost ($299 CAD fixed)" />
+  <meta property="og:description" content="First 5 clients: setup included at the same price. Delivered in 48 hours. Bilingual EN/JP." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b1020" />
+
   <style>
     :root{
-      --bg:#0b0f1a;
-      --card:#11182a;
-      --text:#e9eefb;
-      --muted:#b9c4de;
-      --line:rgba(255,255,255,.12);
-      --accent:#7aa7ff;
-      --accent2:#7dffbf;
-      --shadow: 0 12px 30px rgba(0,0,0,.35);
-      --radius:16px;
-      --max:1080px;
+      --panel: rgba(255,255,255,.06);
+      --stroke: rgba(255,255,255,.12);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.70);
+      --muted2: rgba(255,255,255,.56);
+      --good:#34d399;
+      --warn:#fbbf24;
+      --shadow: 0 14px 50px rgba(0,0,0,.45);
+      --radius: 18px;
+      --radius2: 26px;
+      --max: 1100px;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#070a12 0%, #0b0f1a 60%, #070a12 100%);color:var(--text)}
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:var(--max);margin:0 auto;padding:24px}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0}
-    .brand{display:flex;align-items:center;gap:10px}
-    .logo{
-      width:38px;height:38px;border-radius:12px;
-      background: radial-gradient(circle at 30% 20%, var(--accent) 0%, rgba(122,167,255,.2) 45%, rgba(122,167,255,.05) 70%),
-                  radial-gradient(circle at 70% 80%, var(--accent2) 0%, rgba(125,255,191,.2) 40%, rgba(125,255,191,.06) 70%),
-                  #0d1324;
-      border:1px solid var(--line);
-      box-shadow: var(--shadow);
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(900px 500px at 10% 10%, rgba(110,231,255,.18), transparent 55%),
+        radial-gradient(900px 500px at 85% 10%, rgba(167,139,250,.16), transparent 55%),
+        radial-gradient(900px 700px at 50% 90%, rgba(52,211,153,.10), transparent 60%),
+        linear-gradient(180deg, #060812 0%, #05050b 100%);
     }
-    .brand h1{font-size:16px;margin:0;font-weight:700;letter-spacing:.2px}
-    .brand p{margin:0;color:var(--muted);font-size:12px}
-    .navlinks{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
-    .navlinks a{color:var(--muted);font-size:13px}
-    .navlinks a:hover{color:var(--text)}
-    .lang{padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.06);color:var(--muted);font-size:12px}
-    .lang:hover{color:var(--text)}
-    .hero{
-      margin-top:18px;
-      padding:28px;
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      background:linear-gradient(180deg, rgba(17,24,42,.9) 0%, rgba(17,24,42,.55) 100%);
-      box-shadow: var(--shadow);
-      position:relative;
-      overflow:hidden;
+    a{color:inherit; text-decoration:none}
+    .container{max-width:var(--max); margin:0 auto; padding:0 20px}
+    .nav{
+      position:sticky; top:0; z-index:20;
+      backdrop-filter: blur(14px);
+      background: rgba(7,10,18,.55);
+      border-bottom:1px solid var(--stroke);
     }
-    .hero:before{
-      content:"";
-      position:absolute;inset:-120px -80px auto auto;
-      width:280px;height:280px;border-radius:999px;
-      background:radial-gradient(circle, rgba(122,167,255,.35), rgba(122,167,255,0) 60%);
-      pointer-events:none;
-    }
-    .hero:after{
-      content:"";
-      position:absolute;inset:auto auto -160px -120px;
-      width:340px;height:340px;border-radius:999px;
-      background:radial-gradient(circle, rgba(125,255,191,.25), rgba(125,255,191,0) 60%);
-      pointer-events:none;
-    }
-    .grid{display:grid;grid-template-columns:1.3fr .7fr;gap:18px;align-items:start}
-    @media (max-width:900px){.grid{grid-template-columns:1fr}}
-    .kicker{color:var(--muted);font-size:13px;margin:0 0 10px}
-    .hero h2{margin:0 0 10px;font-size:34px;line-height:1.15;letter-spacing:.2px}
-    @media (max-width:520px){.hero h2{font-size:28px}}
-    .hero .sub{margin:0 0 18px;color:var(--muted);font-size:15px;line-height:1.7}
-    .ctaRow{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+    .nav-inner{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+    .brand{display:flex; gap:12px; align-items:center}
+    .logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg, rgba(110,231,255,.9), rgba(167,139,250,.9));box-shadow:var(--shadow)}
+    .brand h1{font-size:14px; margin:0}
+    .brand .sub{font-size:12px; color:var(--muted2); margin-top:2px}
+    .nav-links{display:flex; gap:16px; align-items:center}
+    .nav-links a{font-size:13px; color:var(--muted)}
+    .nav-links a:hover{color:var(--text)}
+    .pill{display:inline-flex; align-items:center; gap:8px; padding:10px 12px; border-radius:999px; border:1px solid var(--stroke); background: rgba(255,255,255,.04); font-size:12px; color:var(--muted)}
+    .pill b{color:var(--text)}
     .btn{
-      display:inline-flex;align-items:center;justify-content:center;
-      padding:12px 14px;border-radius:12px;border:1px solid var(--line);
-      background:rgba(255,255,255,.06);
-      color:var(--text);
-      font-weight:700;font-size:14px;
-      min-width:200px;
-    }
-    .btn:hover{background:rgba(255,255,255,.09)}
-    .btn.primary{
-      background:linear-gradient(90deg, rgba(122,167,255,.95), rgba(125,255,191,.9));
-      color:#0b0f1a;border:0;
-    }
-    .btn.primary:hover{filter:brightness(1.03)}
-    .note{margin-top:10px;color:var(--muted);font-size:12px}
-    .card{
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      background:rgba(17,24,42,.55);
-      padding:18px;
-      box-shadow: var(--shadow);
-    }
-    .badge{
-      display:inline-flex;align-items:center;gap:8px;
-      padding:7px 10px;border-radius:999px;
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.06);
-      color:var(--muted);font-size:12px;margin-bottom:10px;
-    }
-    .stat{display:grid;gap:10px}
-    .stat .big{font-size:26px;font-weight:900;letter-spacing:.2px}
-    .stat .small{color:var(--muted);font-size:12px;line-height:1.6}
-    .section{margin-top:26px}
-    .section h3{margin:0 0 10px;font-size:20px}
-    .section p.lead{margin:0 0 14px;color:var(--muted);line-height:1.7}
-    .cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-    @media (max-width:900px){.cols{grid-template-columns:1fr}}
-    ul{margin:10px 0 0 18px;color:var(--muted);line-height:1.7}
-    .serviceTitle{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap}
-    .price{font-weight:900}
-    .price strong{color:var(--text)}
-    .hl{
-      background:linear-gradient(90deg, rgba(122,167,255,.28), rgba(125,255,191,.24));
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:12px 14px; border-radius:14px;
       border:1px solid rgba(255,255,255,.16);
-      padding:10px 12px;border-radius:14px;
-      margin:12px 0;
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      font-weight:800;
+      box-shadow: 0 10px 30px rgba(0,0,0,.30);
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+      cursor:pointer;
+      white-space:nowrap;
     }
-    .hl .big{font-size:18px;font-weight:900}
-    .hl .small{color:var(--muted);font-size:12px;margin-top:6px;line-height:1.6}
-    details{
-      border:1px solid var(--line);
-      border-radius:14px;
-      background:rgba(17,24,42,.45);
-      padding:12px 14px;
-    }
-    details summary{cursor:pointer;font-weight:800}
-    details p{color:var(--muted);line-height:1.7;margin:10px 0 0}
-    .footer{
-      margin:26px 0 10px;
-      padding-top:14px;
-      border-top:1px solid var(--line);
-      color:var(--muted);
-      font-size:12px;
-      display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap
-    }
-    .contact a{color:var(--text);border-bottom:1px dotted rgba(255,255,255,.35)}
+    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.22)}
+    .btn.primary{background: linear-gradient(135deg, rgba(110,231,255,.22), rgba(167,139,250,.22)); border-color: rgba(110,231,255,.30)}
+    .hero{padding:44px 0 18px}
+    .hero-grid{display:grid; grid-template-columns: 1.35fr .85fr; gap:18px}
+    .card{background: var(--panel); border:1px solid var(--stroke); border-radius: var(--radius2); box-shadow: var(--shadow)}
+    .hero-card{padding:26px}
+    .kicker{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px}
+    .badge{display:inline-flex; align-items:center; gap:8px; padding:8px 10px; border-radius:999px; background: rgba(255,255,255,.06); border:1px solid var(--stroke); font-size:12px; color:var(--muted)}
+    .badge .dot{width:8px;height:8px;border-radius:999px;background:var(--good)}
+    .badge.launch{border-color: rgba(251,191,36,.28); background: rgba(251,191,36,.10)}
+    .badge.launch .dot{background: var(--warn)}
+    .title{font-size:34px; line-height:1.15; margin:0 0 12px}
+    .lead{margin:0 0 16px; color: var(--muted); font-size:15px; line-height:1.75}
+    .cta-row{display:flex; gap:12px; flex-wrap:wrap; margin-top:14px}
+    .note{margin-top:12px; color: var(--muted2); font-size:12.5px; line-height:1.6}
+    .price-card{padding:22px}
+    .price-title{margin:0; font-size:14px; color:var(--muted)}
+    .price{font-size:34px; font-weight:900; margin:6px 0 2px}
+    .price-sub{font-size:12.5px; color:var(--muted2); margin:0}
+    .launch-box{margin-top:14px; padding:14px; border-radius:16px; border:1px solid rgba(251,191,36,.28); background: rgba(251,191,36,.08)}
+    .launch-box ul{margin:10px 0 0; padding-left:18px; color: var(--muted); font-size:13px; line-height:1.75}
+    .sec{padding:10px 0 0}
+    .sec h2{font-size:18px; margin:0 0 10px}
+    .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+    .panel{padding:18px; border-radius: var(--radius); background: var(--panel); border:1px solid var(--stroke)}
+    .panel p{margin:0; color:var(--muted); line-height:1.75; font-size:14px}
+    .panel ul{margin:10px 0 0; padding-left:18px; color:var(--muted); font-size:14px; line-height:1.8}
+    .steps{display:grid; gap:10px; margin-top:10px}
+    .step{display:flex; gap:12px; align-items:flex-start}
+    .num{width:28px;height:28px;border-radius:10px;display:flex;align-items:center;justify-content:center;background: rgba(255,255,255,.06);border:1px solid var(--stroke);font-weight:900;font-size:13px}
+    .faq details{background: var(--panel); border:1px solid var(--stroke); border-radius: 16px; padding:14px}
+    .faq summary{cursor:pointer; font-weight:900}
+    .faq .a{margin-top:10px; color:var(--muted); line-height:1.75; font-size:14px}
+    .footer{padding:26px 0 34px; color:var(--muted2); font-size:12.5px}
+    .sticky{position:fixed; left:0; right:0; bottom:0; padding:12px 14px; background: rgba(7,10,18,.70); border-top: 1px solid var(--stroke); backdrop-filter: blur(14px); display:none; z-index:30}
+    .sticky .container{display:flex; gap:10px; align-items:center; justify-content:space-between}
+    .sticky .mini{color:var(--muted); font-size:12.5px; line-height:1.35}
+    @media (max-width: 980px){.hero-grid{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}.title{font-size:30px}}
+    @media (max-width: 720px){.nav-links{display:none}.sticky{display:block} body{padding-bottom:74px}}
+    /* emphasis */
+    .em{font-weight:900; color:rgba(255,255,255,.98)}
+    .hl{padding:2px 6px;border-radius:8px;border:1px solid rgba(110,231,255,.28);background: rgba(110,231,255,.08);display:inline-block}
   </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <header class="nav">
+  <header class="nav">
+    <div class="container nav-inner">
       <div class="brand">
         <div class="logo" aria-hidden="true"></div>
         <div>
           <h1>Help Man</h1>
-          <p>Vancouver | Local Growth Ops</p>
+          <div class="sub">Vancouver | Local Growth Ops</div>
         </div>
       </div>
-      <nav class="navlinks" aria-label="Site">
+      <nav class="nav-links" aria-label="menu">
+        <a href="#benefits">Benefits</a>
         <a href="#services">Services</a>
-        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#how">Process</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
-        <a class="lang" href="./index.html">JP</a>
+        <a class="pill" href="/"><b>JP</b> / EN</a>
       </nav>
-    </header>
+      <a class="btn primary" href="https://wa.me/12369926149" target="_blank" rel="noopener">Book a free consult</a>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero">
-        <div class="grid">
-          <div>
-            <p class="kicker">Google Maps visibility × booking conversion</p>
-            <h2>Turn search traffic into calls, bookings, and real customers.</h2>
-            <p class="sub">
-              48-hour Google Business Profile optimization plus a mobile-first, one-page booking landing page.
-              Built for Vancouver local businesses. English/Japanese support.
-            </p>
-            <div class="ctaRow">
-              <a class="btn primary" href="#mapboost">Request the 48-hour Map Boost</a>
-              <a class="btn" href="#lpsprint">Request the booking page</a>
-            </div>
-            <div class="note">Free 15-min consult · Vancouver based</div>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="card hero-card">
+          <div class="kicker">
+            <div class="badge"><span class="dot"></span> <span class="em">Bilingual support: EN / JP</span></div>
+            <div class="badge launch"><span class="dot"></span> <span class="em">First 5 clients: setup included</span></div>
+            <div class="badge"><span class="dot"></span> <span class="em">Delivered in 48 hours</span> (after access + materials)</div>
+            <div class="badge"><span class="dot"></span> <span class="em">Booking-focused contact flow</span> (WhatsApp / Email)</div>
           </div>
 
-          <aside class="card">
-            <div class="badge">Launch Offer</div>
-            <div class="stat">
-              <div class="big">$299 CAD</div>
-              <div class="small">
-                48-Hour Map Boost (first 3 clients). Delivered 48 hours after access + materials are received.
-              </div>
-            </div>
-            <div style="height:10px"></div>
-            <a class="btn" href="#contact">Talk to Help Man</a>
-          </aside>
-        </div>
-      </section>
+          <h2 class="title">Turn local searches into <span class="hl">bookings</span>.</h2>
 
-      <section class="section" id="problems">
-        <h3>What we fix</h3>
-        <p class="lead">We identify the highest-impact improvements and build a clean, reliable foundation for growth.</p>
-        <div class="cols">
-          <div class="card">
-            <ul>
-              <li>Not ranking well on Google Maps / low discovery</li>
-              <li>Few reviews, slow replies, weak trust signals</li>
-              <li>Bookings leak because the path to action is unclear</li>
-            </ul>
+          <p class="lead">
+            We optimize your Google Business Profile in <span class="em">48 hours</span> and build a <span class="em">conversion-ready contact flow</span>.<br/>
+            The goal is simple: <span class="em">Found → Trusted → Contacted</span>.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="https://wa.me/12369926149" target="_blank" rel="noopener">Book a free consult</a>
+            <a class="btn" href="#pricing">See pricing + bonus</a>
+            <a class="btn" href="mailto:jibenaixiang@gmail.com">Email us</a>
           </div>
-          <div class="card">
-            <ul>
-              <li>No clear priorities (what to fix first)</li>
-              <li>English operations slow everything down</li>
-              <li>Outdated page that’s hard to read on mobile</li>
-            </ul>
+
+          <div class="note">
+            No one can guarantee rankings. We apply proven best practices to improve visibility and conversion readiness.<br/>
+            The 48-hour timer starts after required access + materials are received.
           </div>
         </div>
-      </section>
 
-      <section class="section" id="services">
-        <h3>Services</h3>
+        <aside class="card price-card" id="pricing">
+          <p class="price-title">Standard price (fixed)</p>
+          <div class="price">$299 <span style="font-size:14px;color:var(--muted)">CAD</span></div>
+          <p class="price-sub"><span class="em">48-Hour Map Boost</span> (Google Business Profile)</p>
 
-        <div class="cols">
-          <div class="card" id="mapboost">
-            <div class="serviceTitle">
-              <h4 style="margin:0;font-size:18px">48-Hour Map Boost (Google Business Profile)</h4>
-              <div class="price">Launch: <strong>$299 CAD</strong> / Regular: $349</div>
-            </div>
-            <div class="hl">
-              <div class="big">Launch price for the first 3 clients</div>
-              <div class="small">48-hour delivery starts once access + required materials are received.</div>
-            </div>
+          <div class="launch-box">
+            <b>Launch Bonus (First 5 clients)</b><br/>
+            Same price <b>$299 CAD</b> includes:
             <ul>
-              <li>Profile cleanup & structure (categories, services, description, attributes)</li>
-              <li>Content baseline (photos/posts layout and standards)</li>
-              <li>Review flow (request message + reply templates)</li>
-              <li>Local SEO essentials (search intent alignment)</li>
-              <li>Clear next-step priorities (what to do next)</li>
-            </ul>
-            <div class="ctaRow" style="margin-top:16px">
-              <a class="btn primary" href="https://wa.me/12369926149" target="_blank" rel="noopener">Request via WhatsApp</a>
-              <a class="btn" href="mailto:jibenaixiang@gmail.com">Request via Email</a>
-            </div>
-          </div>
-
-          <div class="card" id="lpsprint">
-            <div class="serviceTitle">
-              <h4 style="margin:0;font-size:18px">Booking Page Sprint (1-page Website / Landing Page)</h4>
-              <div class="price">Launch: <strong>$499 CAD</strong> / Regular: $599</div>
-            </div>
-            <div class="hl">
-              <div class="big">A mobile-first page that converts</div>
-              <div class="small">Simple layout, strong CTA, and a clear path to booking or inquiry.</div>
-            </div>
-            <ul>
-              <li>One-page structure (Hero, services, FAQ, CTA)</li>
-              <li>Mobile-first UX (tap targets, layout, sections)</li>
-              <li>English/Japanese copy (as needed)</li>
-              <li>Booking + inquiry setup (form / WhatsApp / booking link)</li>
-              <li>Basic SEO (titles, descriptions, headings)</li>
-            </ul>
-            <div class="ctaRow" style="margin-top:16px">
-              <a class="btn primary" href="https://wa.me/12369926149" target="_blank" rel="noopener">Ask on WhatsApp</a>
-              <a class="btn" href="mailto:jibenaixiang@gmail.com">Ask by Email</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="process">
-        <h3>Process</h3>
-        <div class="cols">
-          <div class="card">
-            <ul>
-              <li><strong>Step 1 — Free 15-min consult</strong>: goals + current status</li>
-              <li><strong>Step 2 — Materials</strong>: logo/photos/hours/services/booking link</li>
-              <li><strong>Step 3 — Build & deliver</strong>: Map Boost in 48 hours; LP draft → revisions → publish</li>
-              <li><strong>Step 4 — Next steps</strong>: ongoing content, reviews, conversion improvements</li>
+              <li><span class="em">Google Account setup support</span> (if needed)</li>
+              <li><span class="em">New GBP setup / connection</span></li>
+              <li><span class="em">48-hour optimization + handover notes</span></li>
             </ul>
           </div>
-          <div class="card">
-            <div class="badge">Typical materials</div>
-            <ul>
-              <li>Business name (EN/JP), address, hours</li>
-              <li>Service list and rough pricing</li>
-              <li>Photos (space, service, staff, products)</li>
-              <li>Booking link or WhatsApp preference</li>
-              <li>Existing website / Instagram / GBP link</li>
-            </ul>
+
+          <div class="cta-row" style="margin-top:14px">
+            <a class="btn primary" href="https://wa.me/12369926149" target="_blank" rel="noopener">Claim the First-5 bonus</a>
+            <a class="btn" href="#payment">Payment</a>
           </div>
-        </div>
-      </section>
 
-      <section class="section" id="faq">
-        <h3>FAQ</h3>
-        <div style="display:grid;gap:10px">
-          <details>
-            <summary>How long does the launch price last?</summary>
-            <p>It ends once the first 3 client slots are filled.</p>
-          </details>
-          <details>
-            <summary>When does the 48-hour clock start?</summary>
-            <p>Once access permissions and required materials are received.</p>
-          </details>
-          <details>
-            <summary>Can you help if my English ops are slow?</summary>
-            <p>Yes. We can provide English/Japanese copy and reply templates.</p>
-          </details>
-        </div>
-      </section>
+          <div class="note">After the first 5 clients, setup support becomes an optional add-on.</div>
+        </aside>
+      </div>
+    </section>
 
-      <section class="section card" id="contact">
-        <h3 style="margin-top:0">Contact</h3>
-        <p class="lead" style="margin-bottom:10px">Start with a free 15-minute consult. We’ll suggest the fastest path to results.</p>
-        <div class="ctaRow">
-          <a class="btn primary" href="https://wa.me/12369926149" target="_blank" rel="noopener">WhatsApp: Message now</a>
-          <a class="btn" href="mailto:jibenaixiang@gmail.com">Email: jibenaixiang@gmail.com</a>
+    <section class="sec" id="benefits">
+      <h2>Benefits (why you’ll want this)</h2>
+      <div class="grid-2">
+        <div class="panel">
+          <h3 style="margin:0 0 6px;font-size:16px"><span class="em">Built to convert into inquiries/bookings</span></h3>
+          <p>Not just “visibility”—we focus on a <span class="em">booking-ready contact flow</span> (CTA, copy, structure).</p>
+          <ul>
+            <li>Short path to WhatsApp/Email</li>
+            <li>Clear services/menu formatting</li>
+            <li>FAQ + payment + process to remove hesitation</li>
+          </ul>
         </div>
-        <p class="note">Tip: message “Map Boost” or “LP” to speed things up.</p>
-      </section>
-
-      <div class="footer">
-        <div>© <span id="y"></span> Help Man</div>
-        <div class="contact">
-          <a href="https://wa.me/12369926149" target="_blank" rel="noopener">WhatsApp</a> /
-          <a href="mailto:jibenaixiang@gmail.com">Email</a>
+        <div class="panel">
+          <h3 style="margin:0 0 6px;font-size:16px"><span class="em">Done in 48 hours</span> (stop delaying)</h3>
+          <p>We take you from “I should fix this” to <span class="em">live and conversion-ready</span>—fast.</p>
+          <ul>
+            <li>Handover notes with next steps</li>
+            <li>First 5 clients: <span class="em">setup included at the same price</span></li>
+            <li><span class="em">Bilingual support (EN/JP)</span></li>
+          </ul>
         </div>
       </div>
-    </main>
+    </section>
+
+    <section class="sec" id="services">
+      <h2>Services</h2>
+      <div class="grid-2">
+        <div class="panel">
+          <h3 style="margin:0 0 6px;font-size:16px"><span class="em">48-Hour Map Boost</span> (Google Business Profile)</h3>
+          <p>Fast, structured optimization to improve local visibility and make your profile conversion-ready.</p>
+          <ul>
+            <li>Business info cleanup (NAP consistency) + categories</li>
+            <li>Services/menu copy formatting (clear + mobile-friendly)</li>
+            <li><span class="em">Booking-focused CTA/contact flow</span> (WhatsApp / Email)</li>
+            <li>Photo checklist + starter posting plan</li>
+            <li>Review reply templates (EN/JP)</li>
+            <li>Handover notes (what changed + next steps)</li>
+          </ul>
+          <p class="note">48 hours starts after required access + materials are received.</p>
+        </div>
+
+        <div class="panel">
+          <h3 style="margin:0 0 6px;font-size:16px">Booking Page Sprint (1-page landing page)</h3>
+          <p>A clean, mobile-first page designed to turn visitors into inquiries.</p>
+          <ul>
+            <li>Offer structure + CTA placement</li>
+            <li>WhatsApp / Email / booking links</li>
+            <li>Fast loading, lightweight design</li>
+            <li><span class="em">Bilingual copy available (EN/JP)</span></li>
+          </ul>
+          <p class="note">Quoted based on scope. Start with a free consult.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="payment">
+      <h2>Payment</h2>
+      <div class="split">
+        <div class="panel">
+          <p><b>We accept:</b> E-transfer (Canada) / Credit & Debit (Stripe) / PayPal</p>
+          <p class="note"><b>Start condition:</b> Work begins after payment + required access/materials are received.</p>
+        </div>
+        <div class="panel">
+          <p><b>What we need (example)</b></p>
+          <ul>
+            <li>Business name / address / phone</li>
+            <li>Services/menu details</li>
+            <li>GBP access (or new setup for first 5)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="how">
+      <h2>Process (3 steps)</h2>
+      <div class="panel">
+        <div class="steps">
+          <div class="step">
+            <div class="num">1</div>
+            <div><b>Book a free consult</b><div class="note">WhatsApp or email. We’ll confirm your goals and current status.</div></div>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <div><b>Share access + materials</b><div class="note">We provide a checklist. The 48h timer starts after everything is received.</div></div>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <div><b>Delivery in 48 hours + handover notes</b><div class="note">Clear summary of what changed and next steps.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec faq" id="faq">
+      <h2>FAQ</h2>
+      <div style="display:grid; gap:10px">
+        <details>
+          <summary>When does the 48 hours start?</summary>
+          <div class="a">After we receive the required access and materials.</div>
+        </details>
+        <details>
+          <summary>Do you guarantee rankings?</summary>
+          <div class="a">No one can guarantee rankings. We apply proven best practices to improve visibility and conversion readiness.</div>
+        </details>
+        <details>
+          <summary>Do you support Japanese?</summary>
+          <div class="a">Yes. We provide bilingual support (EN/JP).</div>
+        </details>
+        <details>
+          <summary>What’s included in the First 5 bonus?</summary>
+          <div class="a">At the same $299 CAD price, we include Google Account support + new GBP setup/connection if needed.</div>
+        </details>
+      </div>
+    </section>
+
+    <section class="sec" id="contact">
+      <h2>Contact</h2>
+      <div class="panel">
+        <p>Start with a free consult. We’ll tell you exactly what’s needed and what we can improve.</p>
+        <div class="cta-row" style="margin-top:12px">
+          <a class="btn primary" href="https://wa.me/12369926149" target="_blank" rel="noopener">Book a free consult</a>
+          <a class="btn" href="mailto:jibenaixiang@gmail.com">Email us</a>
+          <a class="btn" href="/">日本語ページ</a>
+        </div>
+        <div class="note">© <span id="y"></span> Help Man</div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">© <span id="y2"></span> Help Man. All rights reserved.</div>
+    </footer>
+  </main>
+
+  <div class="sticky">
+    <div class="container">
+      <div>
+        <div style="font-weight:900">Standard $299 CAD</div>
+        <div class="mini"><span class="em">First 5 clients</span>: setup included / <span class="em">48 hours</span> delivery</div>
+      </div>
+      <a class="btn primary" href="https://wa.me/12369926149" target="_blank" rel="noopener">Book a free consult</a>
+    </div>
   </div>
 
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    const y = new Date().getFullYear();
+    const a = document.getElementById('y');
+    const b = document.getElementById('y2');
+    if (a) a.textContent = y;
+    if (b) b.textContent = y;
   </script>
 </body>
 </html>
