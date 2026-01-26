@@ -49,10 +49,15 @@
     .nav-inner{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
     .brand{display:flex; gap:12px; align-items:center}
     .logo{
-      width:40px; height:40px; border-radius:12px;
-      background: linear-gradient(135deg, rgba(110,231,255,.9), rgba(167,139,250,.9));
-      box-shadow: var(--shadow);
-    }
+  width:44px;              /* 40〜52で好みに調整 */
+  height:44px;
+  border-radius:12px;      /* 角丸いらなければ 0 */
+  object-fit: contain;     /* imgが潰れない */
+  image-rendering: pixelated; /* ドット感キープ */
+  display:block;
+  flex: 0 0 auto;
+}
+
     .brand h1{font-size:14px; margin:0; letter-spacing:.2px}
     .brand .sub{font-size:12px; color:var(--muted2); margin-top:2px}
     .nav-links{display:flex; gap:16px; align-items:center}
@@ -184,7 +189,8 @@
   <header class="nav">
     <div class="container nav-inner">
       <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
+        <img class="logo" src="./assets/brand/helpman_icon.png" alt="Help Man logo">
+
         <div>
           <h1>Help Man</h1>
           <div class="sub">Vancouver | Local Growth Ops</div>
